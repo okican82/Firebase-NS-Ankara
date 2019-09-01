@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADA05062231C2F8E000010A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA05061231C2F8E000010A4 /* AppDelegate.swift */; };
+		ADA05064231C2F8E000010A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA05063231C2F8E000010A4 /* ViewController.swift */; };
+		ADA05067231C2F8E000010A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA05065231C2F8E000010A4 /* Main.storyboard */; };
+		ADA0506A231C2F8E000010A4 /* Firebase_Meet_Up.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADA05068231C2F8E000010A4 /* Firebase_Meet_Up.xcdatamodeld */; };
+		ADA0506C231C2F90000010A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA0506B231C2F90000010A4 /* Assets.xcassets */; };
+		ADA0506F231C2F90000010A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA0506D231C2F90000010A4 /* LaunchScreen.storyboard */; };
+		ADA0507A231C2F90000010A4 /* Firebase_Meet_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA05079231C2F90000010A4 /* Firebase_Meet_UpTests.swift */; };
+		ADA05085231C2F90000010A4 /* Firebase_Meet_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA05084231C2F90000010A4 /* Firebase_Meet_UpUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADA05076231C2F90000010A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADA05056231C2F8E000010A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADA0505D231C2F8E000010A4;
+			remoteInfo = "Firebase Meet Up";
+		};
+		ADA05081231C2F90000010A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADA05056231C2F8E000010A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADA0505D231C2F8E000010A4;
+			remoteInfo = "Firebase Meet Up";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADA0505E231C2F8E000010A4 /* Firebase Meet Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase Meet Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA05061231C2F8E000010A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADA05063231C2F8E000010A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADA05066231C2F8E000010A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADA05069231C2F8E000010A4 /* Firebase_Meet_Up.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Firebase_Meet_Up.xcdatamodel; sourceTree = "<group>"; };
+		ADA0506B231C2F90000010A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADA0506E231C2F90000010A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADA05070231C2F90000010A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA05075231C2F90000010A4 /* Firebase Meet UpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Firebase Meet UpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA05079231C2F90000010A4 /* Firebase_Meet_UpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_Meet_UpTests.swift; sourceTree = "<group>"; };
+		ADA0507B231C2F90000010A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA05080231C2F90000010A4 /* Firebase Meet UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Firebase Meet UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA05084231C2F90000010A4 /* Firebase_Meet_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_Meet_UpUITests.swift; sourceTree = "<group>"; };
+		ADA05086231C2F90000010A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADA0505B231C2F8E000010A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA05072231C2F90000010A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA0507D231C2F90000010A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADA05055231C2F8E000010A4 = {
+			isa = PBXGroup;
+			children = (
+				ADA05060231C2F8E000010A4 /* Firebase Meet Up */,
+				ADA05078231C2F90000010A4 /* Firebase Meet UpTests */,
+				ADA05083231C2F90000010A4 /* Firebase Meet UpUITests */,
+				ADA0505F231C2F8E000010A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADA0505F231C2F8E000010A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADA0505E231C2F8E000010A4 /* Firebase Meet Up.app */,
+				ADA05075231C2F90000010A4 /* Firebase Meet UpTests.xctest */,
+				ADA05080231C2F90000010A4 /* Firebase Meet UpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADA05060231C2F8E000010A4 /* Firebase Meet Up */ = {
+			isa = PBXGroup;
+			children = (
+				ADA05061231C2F8E000010A4 /* AppDelegate.swift */,
+				ADA05063231C2F8E000010A4 /* ViewController.swift */,
+				ADA05065231C2F8E000010A4 /* Main.storyboard */,
+				ADA0506B231C2F90000010A4 /* Assets.xcassets */,
+				ADA0506D231C2F90000010A4 /* LaunchScreen.storyboard */,
+				ADA05070231C2F90000010A4 /* Info.plist */,
+				ADA05068231C2F8E000010A4 /* Firebase_Meet_Up.xcdatamodeld */,
+			);
+			path = "Firebase Meet Up";
+			sourceTree = "<group>";
+		};
+		ADA05078231C2F90000010A4 /* Firebase Meet UpTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADA05079231C2F90000010A4 /* Firebase_Meet_UpTests.swift */,
+				ADA0507B231C2F90000010A4 /* Info.plist */,
+			);
+			path = "Firebase Meet UpTests";
+			sourceTree = "<group>";
+		};
+		ADA05083231C2F90000010A4 /* Firebase Meet UpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADA05084231C2F90000010A4 /* Firebase_Meet_UpUITests.swift */,
+				ADA05086231C2F90000010A4 /* Info.plist */,
+			);
+			path = "Firebase Meet UpUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADA0505D231C2F8E000010A4 /* Firebase Meet Up */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA05089231C2F90000010A4 /* Build configuration list for PBXNativeTarget "Firebase Meet Up" */;
+			buildPhases = (
+				ADA0505A231C2F8E000010A4 /* Sources */,
+				ADA0505B231C2F8E000010A4 /* Frameworks */,
+				ADA0505C231C2F8E000010A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Firebase Meet Up";
+			productName = "Firebase Meet Up";
+			productReference = ADA0505E231C2F8E000010A4 /* Firebase Meet Up.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADA05074231C2F90000010A4 /* Firebase Meet UpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA0508C231C2F90000010A4 /* Build configuration list for PBXNativeTarget "Firebase Meet UpTests" */;
+			buildPhases = (
+				ADA05071231C2F90000010A4 /* Sources */,
+				ADA05072231C2F90000010A4 /* Frameworks */,
+				ADA05073231C2F90000010A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADA05077231C2F90000010A4 /* PBXTargetDependency */,
+			);
+			name = "Firebase Meet UpTests";
+			productName = "Firebase Meet UpTests";
+			productReference = ADA05075231C2F90000010A4 /* Firebase Meet UpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADA0507F231C2F90000010A4 /* Firebase Meet UpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA0508F231C2F90000010A4 /* Build configuration list for PBXNativeTarget "Firebase Meet UpUITests" */;
+			buildPhases = (
+				ADA0507C231C2F90000010A4 /* Sources */,
+				ADA0507D231C2F90000010A4 /* Frameworks */,
+				ADA0507E231C2F90000010A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADA05082231C2F90000010A4 /* PBXTargetDependency */,
+			);
+			name = "Firebase Meet UpUITests";
+			productName = "Firebase Meet UpUITests";
+			productReference = ADA05080231C2F90000010A4 /* Firebase Meet UpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADA05056231C2F8E000010A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Enocta;
+				TargetAttributes = {
+					ADA0505D231C2F8E000010A4 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					ADA05074231C2F90000010A4 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = ADA0505D231C2F8E000010A4;
+					};
+					ADA0507F231C2F90000010A4 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = ADA0505D231C2F8E000010A4;
+					};
+				};
+			};
+			buildConfigurationList = ADA05059231C2F8E000010A4 /* Build configuration list for PBXProject "Firebase Meet Up" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADA05055231C2F8E000010A4;
+			productRefGroup = ADA0505F231C2F8E000010A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADA0505D231C2F8E000010A4 /* Firebase Meet Up */,
+				ADA05074231C2F90000010A4 /* Firebase Meet UpTests */,
+				ADA0507F231C2F90000010A4 /* Firebase Meet UpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADA0505C231C2F8E000010A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA0506F231C2F90000010A4 /* LaunchScreen.storyboard in Resources */,
+				ADA0506C231C2F90000010A4 /* Assets.xcassets in Resources */,
+				ADA05067231C2F8E000010A4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA05073231C2F90000010A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA0507E231C2F90000010A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADA0505A231C2F8E000010A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA05064231C2F8E000010A4 /* ViewController.swift in Sources */,
+				ADA0506A231C2F8E000010A4 /* Firebase_Meet_Up.xcdatamodeld in Sources */,
+				ADA05062231C2F8E000010A4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA05071231C2F90000010A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA0507A231C2F90000010A4 /* Firebase_Meet_UpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA0507C231C2F90000010A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA05085231C2F90000010A4 /* Firebase_Meet_UpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADA05077231C2F90000010A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADA0505D231C2F8E000010A4 /* Firebase Meet Up */;
+			targetProxy = ADA05076231C2F90000010A4 /* PBXContainerItemProxy */;
+		};
+		ADA05082231C2F90000010A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADA0505D231C2F8E000010A4 /* Firebase Meet Up */;
+			targetProxy = ADA05081231C2F90000010A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADA05065231C2F8E000010A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA05066231C2F8E000010A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADA0506D231C2F90000010A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA0506E231C2F90000010A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADA05087231C2F90000010A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADA05088231C2F90000010A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADA0508A231C2F90000010A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 267AN8YNZE;
+				INFOPLIST_FILE = "Firebase Meet Up/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.okay.Firebase-Meet-Up";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADA0508B231C2F90000010A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 267AN8YNZE;
+				INFOPLIST_FILE = "Firebase Meet Up/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.okay.Firebase-Meet-Up";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADA0508D231C2F90000010A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 267AN8YNZE;
+				INFOPLIST_FILE = "Firebase Meet UpTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.okay.Firebase-Meet-UpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Firebase Meet Up.app/Firebase Meet Up";
+			};
+			name = Debug;
+		};
+		ADA0508E231C2F90000010A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 267AN8YNZE;
+				INFOPLIST_FILE = "Firebase Meet UpTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.okay.Firebase-Meet-UpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Firebase Meet Up.app/Firebase Meet Up";
+			};
+			name = Release;
+		};
+		ADA05090231C2F90000010A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 267AN8YNZE;
+				INFOPLIST_FILE = "Firebase Meet UpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.okay.Firebase-Meet-UpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Firebase Meet Up";
+			};
+			name = Debug;
+		};
+		ADA05091231C2F90000010A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 267AN8YNZE;
+				INFOPLIST_FILE = "Firebase Meet UpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.okay.Firebase-Meet-UpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Firebase Meet Up";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADA05059231C2F8E000010A4 /* Build configuration list for PBXProject "Firebase Meet Up" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA05087231C2F90000010A4 /* Debug */,
+				ADA05088231C2F90000010A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA05089231C2F90000010A4 /* Build configuration list for PBXNativeTarget "Firebase Meet Up" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA0508A231C2F90000010A4 /* Debug */,
+				ADA0508B231C2F90000010A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA0508C231C2F90000010A4 /* Build configuration list for PBXNativeTarget "Firebase Meet UpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA0508D231C2F90000010A4 /* Debug */,
+				ADA0508E231C2F90000010A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA0508F231C2F90000010A4 /* Build configuration list for PBXNativeTarget "Firebase Meet UpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA05090231C2F90000010A4 /* Debug */,
+				ADA05091231C2F90000010A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ADA05068231C2F8E000010A4 /* Firebase_Meet_Up.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ADA05069231C2F8E000010A4 /* Firebase_Meet_Up.xcdatamodel */,
+			);
+			currentVersion = ADA05069231C2F8E000010A4 /* Firebase_Meet_Up.xcdatamodel */;
+			path = Firebase_Meet_Up.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ADA05056231C2F8E000010A4 /* Project object */;
+}

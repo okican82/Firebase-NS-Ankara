@@ -12,5 +12,8 @@ target 'Firebase Meet Up' do
     pod 'Firebase/Messaging'
     pod 'SVProgressHUD'
     pod 'GoogleSignIn'
+    
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKLoginKit'
 
 end

@@ -9,17 +9,37 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import FBSDKCoreKit
+import FBSDKLoginKit
 
+class ViewController: UIViewController,GIDSignInUIDelegate,FBSDKLoginButtonDelegate{
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        }
+        let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+        Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
+            if let err = error {
+                print("error facebook","error facebook")
+                return
+            }
+            
+        }
+        // ...
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        print("Logged out")
 
-class ViewController: UIViewController,GIDSignInUIDelegate {
+    }
+    
     
     
 
     @IBOutlet var userName_txt: UITextField!
     @IBOutlet var password_txt: UITextField!
-    
-    @IBOutlet var signInButton: GIDSignInButton!
-    
+        
     
     var spinnerView = UIView()
     
@@ -33,19 +53,30 @@ class ViewController: UIViewController,GIDSignInUIDelegate {
         }
         
         setUpGoogleButton()
+        setUpFacebookButton()
        
-        //let loginButton = FBSDKLoginButton()
-        //loginButton.delegate = self
+        let loginButton = FBSDKLoginButton()
+        loginButton.delegate = self
         
         initializeSpinner()
         // Do any additional setup after loading the view.
+    }
+    
+    fileprivate func setUpFacebookButton()
+    {
+        let loginButton = FBSDKLoginButton()
+        
+        // Optional: Place the button in the center of your view.
+        loginButton.center = view.center
+        view.addSubview(loginButton)
+
     }
     
     fileprivate func setUpGoogleButton()
     {
         
         let gSingIn = GIDSignInButton(frame:CGRect(x:0,y:0,width: 230,height: 48))
-        gSingIn.center = view.center
+        //gSingIn.center = view.center
         view.addSubview(gSingIn)
         
         
@@ -119,6 +150,7 @@ class ViewController: UIViewController,GIDSignInUIDelegate {
         
         
     }
+    
     @IBAction func logoutButtonClicked(_ sender: Any) {
         let firebaseAuth = Auth.auth()
         do {
@@ -127,6 +159,33 @@ class ViewController: UIViewController,GIDSignInUIDelegate {
             print ("Error signing out: %@", signOutError)
         }
 
+    }
+    
+    @IBAction func facebookLogin(sender: AnyObject) {
+        let LoginManager = FBSDKLoginManager()
+        LoginManager.logIn(withReadPermissions: ["public_profile", "email"], from: self) { (result, error) in
+            if let error = error {
+                print("Failed to login: \(error.localizedDescription)")
+                return
+            }
+            guard let accessToken = FBSDKAccessToken.current() else {
+                print("Failed to get access token")
+                return
+            }
+            let credential = FacebookAuthProvider.credential(withAccessToken: accessToken.tokenString)
+            // Perform login by calling Firebase APIs
+            Auth.auth().signInAndRetrieveData(with: credential) { (user, error) in
+                if let error = error {
+                    print("Login error: \(error.localizedDescription)")
+                    let alertController = UIAlertController(title: "Login Error", message: error.localizedDescription, preferredStyle: .alert)
+                    let okayAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(okayAction)
+                    self.present(alertController, animated: true, completion: nil)
+                    return
+                }
+                // self.performSegue(withIdentifier: self.signInSegue, sender: nil)
+            }
+        }
     }
     
 }

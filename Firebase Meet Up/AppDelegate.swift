@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import Firebase
 import GoogleSignIn
+import FBSDKCoreKit
 
 
 @UIApplicationMain
@@ -62,6 +63,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
+        
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         return true
     }

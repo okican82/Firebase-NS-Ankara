@@ -7,16 +7,40 @@
 //
 
 import UIKit
+import Firebase
 
 class SingUpViewController: UIViewController {
 
+    @IBOutlet var userName_txt: UITextField!
+    @IBOutlet var userPassword_txt: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func saveButtonClicked(_ sender: Any) {
+        guard let email = userName_txt.text else {return}
+        guard let password = userPassword_txt.text else {return}
+        
+        
+        Auth.auth().createUser(withEmail: email, password: password){ user,error in
+            if(error == nil && user != nil)
+            {
+                NSLog("user created","user created")
+            }
+            else
+            {
+                NSLog("Error Creating user",error!.localizedDescription)
+            }
+            
+        }
 
+    }
+    
+    
     /*
     // MARK: - Navigation
 

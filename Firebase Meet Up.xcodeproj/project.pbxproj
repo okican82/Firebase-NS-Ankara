@@ -15,6 +15,13 @@
 		ADA0506F231C2F90000010A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA0506D231C2F90000010A4 /* LaunchScreen.storyboard */; };
 		ADA0507A231C2F90000010A4 /* Firebase_Meet_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA05079231C2F90000010A4 /* Firebase_Meet_UpTests.swift */; };
 		ADA05085231C2F90000010A4 /* Firebase_Meet_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA05084231C2F90000010A4 /* Firebase_Meet_UpUITests.swift */; };
+		ADA05093231C3B9C000010A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADA05092231C3B9C000010A4 /* GoogleService-Info.plist */; };
+		ADA05094231C3B9C000010A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADA05092231C3B9C000010A4 /* GoogleService-Info.plist */; };
+		ADA05095231C3B9C000010A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADA05092231C3B9C000010A4 /* GoogleService-Info.plist */; };
+		ADA05097231C46EA000010A4 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA05096231C46EA000010A4 /* SingUpViewController.swift */; };
+		ADA05099231C471A000010A4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA05098231C471A000010A4 /* ListViewController.swift */; };
+		ADA0509B231C473B000010A4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA0509A231C473B000010A4 /* DetailViewController.swift */; };
+		DB413574214F2EEEC66576B8 /* Pods_Firebase_Meet_Up.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C221C96E4C5F87B7E59C0E /* Pods_Firebase_Meet_Up.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55FD37308E0B66DB4F4B7CEE /* Pods-Firebase Meet Up.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Meet Up.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase Meet Up/Pods-Firebase Meet Up.debug.xcconfig"; sourceTree = "<group>"; };
 		ADA0505E231C2F8E000010A4 /* Firebase Meet Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase Meet Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA05061231C2F8E000010A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA05063231C2F8E000010A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,12 @@
 		ADA05080231C2F90000010A4 /* Firebase Meet UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Firebase Meet UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA05084231C2F90000010A4 /* Firebase_Meet_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_Meet_UpUITests.swift; sourceTree = "<group>"; };
 		ADA05086231C2F90000010A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA05092231C3B9C000010A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADA05096231C46EA000010A4 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		ADA05098231C471A000010A4 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		ADA0509A231C473B000010A4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B60951A93E8915D6AEE6CB31 /* Pods-Firebase Meet Up.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase Meet Up.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase Meet Up/Pods-Firebase Meet Up.release.xcconfig"; sourceTree = "<group>"; };
+		D2C221C96E4C5F87B7E59C0E /* Pods_Firebase_Meet_Up.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Meet_Up.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB413574214F2EEEC66576B8 /* Pods_Firebase_Meet_Up.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D346E94741001B037A64996 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55FD37308E0B66DB4F4B7CEE /* Pods-Firebase Meet Up.debug.xcconfig */,
+				B60951A93E8915D6AEE6CB31 /* Pods-Firebase Meet Up.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ADA05055231C2F8E000010A4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +107,8 @@
 				ADA05078231C2F90000010A4 /* Firebase Meet UpTests */,
 				ADA05083231C2F90000010A4 /* Firebase Meet UpUITests */,
 				ADA0505F231C2F8E000010A4 /* Products */,
+				5D346E94741001B037A64996 /* Pods */,
+				B4F340231AAA565965F23ED0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +125,7 @@
 		ADA05060231C2F8E000010A4 /* Firebase Meet Up */ = {
 			isa = PBXGroup;
 			children = (
+				ADA05092231C3B9C000010A4 /* GoogleService-Info.plist */,
 				ADA05061231C2F8E000010A4 /* AppDelegate.swift */,
 				ADA05063231C2F8E000010A4 /* ViewController.swift */,
 				ADA05065231C2F8E000010A4 /* Main.storyboard */,
@@ -106,6 +133,9 @@
 				ADA0506D231C2F90000010A4 /* LaunchScreen.storyboard */,
 				ADA05070231C2F90000010A4 /* Info.plist */,
 				ADA05068231C2F8E000010A4 /* Firebase_Meet_Up.xcdatamodeld */,
+				ADA05096231C46EA000010A4 /* SingUpViewController.swift */,
+				ADA05098231C471A000010A4 /* ListViewController.swift */,
+				ADA0509A231C473B000010A4 /* DetailViewController.swift */,
 			);
 			path = "Firebase Meet Up";
 			sourceTree = "<group>";
@@ -128,6 +158,14 @@
 			path = "Firebase Meet UpUITests";
 			sourceTree = "<group>";
 		};
+		B4F340231AAA565965F23ED0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2C221C96E4C5F87B7E59C0E /* Pods_Firebase_Meet_Up.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADA05089231C2F90000010A4 /* Build configuration list for PBXNativeTarget "Firebase Meet Up" */;
 			buildPhases = (
+				F084FB33F5475DE5A75F6EEC /* [CP] Check Pods Manifest.lock */,
 				ADA0505A231C2F8E000010A4 /* Sources */,
 				ADA0505B231C2F8E000010A4 /* Frameworks */,
 				ADA0505C231C2F8E000010A4 /* Resources */,
+				281716305FA6C2017E2CF722 /* [CP] Embed Pods Frameworks */,
+				FB9CC21F8BC63D2D5BD82C46 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADA0506F231C2F90000010A4 /* LaunchScreen.storyboard in Resources */,
+				ADA05093231C3B9C000010A4 /* GoogleService-Info.plist in Resources */,
 				ADA0506C231C2F90000010A4 /* Assets.xcassets in Resources */,
 				ADA05067231C2F8E000010A4 /* Main.storyboard in Resources */,
 			);
@@ -242,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA05094231C3B9C000010A4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +292,80 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA05095231C3B9C000010A4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		281716305FA6C2017E2CF722 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Firebase Meet Up/Pods-Firebase Meet Up-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firebase Meet Up/Pods-Firebase Meet Up-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F084FB33F5475DE5A75F6EEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Firebase Meet Up-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB9CC21F8BC63D2D5BD82C46 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Firebase Meet Up/Pods-Firebase Meet Up-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Firebase Meet Up/Pods-Firebase Meet Up-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ADA0505A231C2F8E000010A4 /* Sources */ = {
@@ -261,6 +374,9 @@
 			files = (
 				ADA05064231C2F8E000010A4 /* ViewController.swift in Sources */,
 				ADA0506A231C2F8E000010A4 /* Firebase_Meet_Up.xcdatamodeld in Sources */,
+				ADA05097231C46EA000010A4 /* SingUpViewController.swift in Sources */,
+				ADA0509B231C473B000010A4 /* DetailViewController.swift in Sources */,
+				ADA05099231C471A000010A4 /* ListViewController.swift in Sources */,
 				ADA05062231C2F8E000010A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +550,7 @@
 		};
 		ADA0508A231C2F90000010A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55FD37308E0B66DB4F4B7CEE /* Pods-Firebase Meet Up.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,7 +560,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.okay.Firebase-Meet-Up";
+				PRODUCT_BUNDLE_IDENTIFIER = com.okay.FirebaseNSAnkara;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,6 +569,7 @@
 		};
 		ADA0508B231C2F90000010A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B60951A93E8915D6AEE6CB31 /* Pods-Firebase Meet Up.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -461,7 +579,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.okay.Firebase-Meet-Up";
+				PRODUCT_BUNDLE_IDENTIFIER = com.okay.FirebaseNSAnkara;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

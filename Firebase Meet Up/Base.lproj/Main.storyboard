@@ -50,12 +50,33 @@
                                     <action selector="loginButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZmP-su-WDr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeX-et-suV">
+                                <rect key="frame" x="20" y="636" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="logout">
+                                    <color key="titleColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S9P-z9-dVo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJa-Oe-zH4">
+                                <rect key="frame" x="20" y="586" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Google Login">
+                                    <color key="titleColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="oeX-et-suV" firstAttribute="top" secondItem="aJa-Oe-zH4" secondAttribute="bottom" constant="20" id="0IA-Rd-Dty"/>
                             <constraint firstItem="Iva-R5-cL2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5nN-f4-shH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ioi-E1-9Th" secondAttribute="trailing" constant="20" id="BFl-0f-Fr2"/>
                             <constraint firstItem="Iva-R5-cL2" firstAttribute="top" secondItem="RPj-Xk-0pa" secondAttribute="bottom" constant="20" id="DBT-XD-F9H"/>
+                            <constraint firstItem="aJa-Oe-zH4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M1d-bY-5bn"/>
+                            <constraint firstItem="oeX-et-suV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MMk-RE-4jc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oeX-et-suV" secondAttribute="trailing" constant="20" id="NA0-Fc-Xrw"/>
                             <constraint firstItem="RPj-Xk-0pa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="O5U-Ek-HFN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Iva-R5-cL2" secondAttribute="trailing" constant="20" id="OQS-FA-mXd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RPj-Xk-0pa" secondAttribute="trailing" constant="20" id="Tdd-S5-cmy"/>
@@ -63,6 +84,8 @@
                             <constraint firstItem="RPj-Xk-0pa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="WI3-pm-g28"/>
                             <constraint firstItem="Ioi-E1-9Th" firstAttribute="top" secondItem="Iva-R5-cL2" secondAttribute="bottom" constant="20" id="dcx-LG-SYM"/>
                             <constraint firstItem="AB2-CF-SrM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="di8-7g-bK0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aJa-Oe-zH4" secondAttribute="trailing" constant="20" id="iVc-fA-dJ4"/>
+                            <constraint firstItem="AB2-CF-SrM" firstAttribute="top" secondItem="oeX-et-suV" secondAttribute="bottom" constant="20" id="mL4-DH-Edo"/>
                             <constraint firstItem="Iva-R5-cL2" firstAttribute="top" secondItem="RPj-Xk-0pa" secondAttribute="bottom" constant="20" id="n4c-Wh-4n8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AB2-CF-SrM" secondAttribute="trailing" constant="20" id="upA-0h-Ygs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AB2-CF-SrM" secondAttribute="bottom" constant="20" id="yqy-vD-utZ"/>
@@ -72,6 +95,7 @@
                     <navigationItem key="navigationItem" id="Pra-Na-VIs"/>
                     <connections>
                         <outlet property="password_txt" destination="Iva-R5-cL2" id="we8-BQ-qOf"/>
+                        <outlet property="signInButton" destination="aJa-Oe-zH4" id="Vru-AU-sIM"/>
                         <outlet property="userName_txt" destination="RPj-Xk-0pa" id="tir-LE-6eP"/>
                     </connections>
                 </viewController>

@@ -11,10 +11,15 @@ import Firebase
 import GoogleSignIn
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,GIDSignInUIDelegate {
+    
+    
 
     @IBOutlet var userName_txt: UITextField!
     @IBOutlet var password_txt: UITextField!
+    
+    @IBOutlet var signInButton: GIDSignInButton!
+    
     
     var spinnerView = UIView()
     
@@ -23,15 +28,30 @@ class ViewController: UIViewController {
         
         if(Auth.auth().currentUser != nil)
         {
-            NSLog("Bir user var","user var")
+            NSLog("Bir user var","Bir user var")
             
         }
         
+        setUpGoogleButton()
+       
         //let loginButton = FBSDKLoginButton()
         //loginButton.delegate = self
         
         initializeSpinner()
         // Do any additional setup after loading the view.
+    }
+    
+    fileprivate func setUpGoogleButton()
+    {
+        
+        let gSingIn = GIDSignInButton(frame:CGRect(x:0,y:0,width: 230,height: 48))
+        gSingIn.center = view.center
+        view.addSubview(gSingIn)
+        
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
+        
+        
     }
 
     @IBAction func loginButtonClicked(_ sender: Any) {
@@ -52,6 +72,8 @@ class ViewController: UIViewController {
                 NSLog("Error login user",error!.localizedDescription)
             }
         }
+        
+        
     }
     
     func gotoList()
@@ -96,6 +118,15 @@ class ViewController: UIViewController {
         spinnerView.tag = 100
         
         
+    }
+    @IBAction func logoutButtonClicked(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+
     }
     
 }
